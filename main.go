@@ -30,8 +30,6 @@ func main() {
 		log.Fatalf("Unable to read client secret file: %v", err)
 	}
 
-	// If modifying these scopes, delete your previously saved credentials
-	// at ~/.credentials/drive-go-quickstart.json
 	config, err := google.ConfigFromJSON(cred, scope)
 	if err != nil {
 		log.Fatalf("Unable to parse client secret file to config: %v", err)
